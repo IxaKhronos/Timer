@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="">
+<script src="jquery.js"></script>
+<script src="popup.js"></script>
+<style>
+	body{width:400px;}
+	#day{width:2.5em;}
+	textarea{width:350px;height:200px;}
+	#link{width:350px;}
+	span.hd{display:inline-block;width:9em;}
+	button.d{padding:0;border-style:none;background-color:skyblue;}
+</style>
+</head>
+
+<body style="width:400px">
+<div>
+<h4>Schedule List</h4>
+<div id="sList"></div>
+<button id="clear">clear</button>
+</div>
+<div>
+	<h4>New Schedule</h4>
+	<div><button id="upd">時刻更新</button></div>
+	<div>Now:<input  id="ndate" type="date" readonly/><input  id="ntime" type="time" readonly/></div>
+	<div><input id="day" type="number" class="dev" />日<input id="time" type="time" class="dev"/>後<input id="rp" type="checkbox" />繰り返し</div>
+	<div><input  id="adate" type="date" class="abs" /><input  id="atime" type="time" class="abs" /></div>
+	<div>title<input type="text" id="title" /><button id="fire">fire</button></div>
+	<textarea id="text"></textarea>
+	<div>link<input type="text" id="link" /></div>
+</div>
+</body>
+</html>
